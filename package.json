@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "upload": "node upload.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "dotenv": "^4.0.0",
+    "mime-types": "^2.1.21",
+    "mkdirp": "^0.5.1",
+    "s3fs": "^2.5.0"
+  }
+}
