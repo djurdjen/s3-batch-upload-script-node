@@ -33,7 +33,7 @@ uploadImagesS3 = function(offset = 0) {
             resolve();
           } else {
             fs.readFile(
-              path.join(__dirname, "uploads/" + image), // determines the upload path in your s3 environment. you can change this to any directory you like
+              path.join(__dirname, process.env.UPLOAD_DIRECTORY + image), // determines the upload path in your s3 environment. you can change this in your .env file
               (err, file) => {
                 s3fsImpl.writeFile(
                   image,
